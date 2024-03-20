@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+    <title>F1 Betting Game</title>
+    <link rel="stylesheet" href="racing.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Racing Game</h1>
+        <p>Your balance: <span id="balance">R$100</span></p>
+        <input type="number" id="betAmount" min="5" placeholder="Quanto vai apostar hoje?">
+        <select id="selectedDriver">
+        <option value="1">Piloto 1</option>
+        <option value="2">Piloto 2</option>
+        <option value="3">Piloto 3</option>
+        <option value="4">Piloto 4</option>
+        <option value="5">Piloto 5</option>
+    </select>
+    <button onclick="placeBetAndStartRace()">Apostar e Iniciar Corrida!</button>
+    <div id="raceTrack">
+        <div class="car" id="car1"></div>
+        <div class="car" id="car2"></div>
+        <div class="car" id="car3"></div>
+        <div class="car" id="car4"></div>
+        <div class="car" id="car5"></div>
+        <div class="finish-line"></div>
+    </div>
+    <p id="result"></p>
+        <button onclick="resetGame()">Reiniciar</button>
+    </div>
+    <script src="racing.js"></script>
+</body>
+</html>

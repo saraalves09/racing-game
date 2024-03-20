@@ -1,0 +1,102 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px; 
+    font-size: 20px; 
+    text-align: center;
+}
+
+button {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 13px 23px;
+    border: 1px solid #222222;
+    transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+    background: #fff;
+    color: #222222;
+    :hover {
+        border-color: #000000;
+        background: #f7f7f7;
+    }
+
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#selectedDriver{
+    border-radius: 2px;
+    width: 150px;
+    margin: 30px;
+    padding: 10px;
+    font-size: 15px; 
+}
+
+.car {
+    width: 50px;
+    height: 30px;
+    margin-bottom: 10px;
+    position: absolute;
+    left: 0;
+    transition: top 0.5s linear;
+}
+
+#raceTrack {
+    width: 300px;
+    height: 200px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    background-color: #ccc;
+    border-radius: 2px;
+}
+
+.finish-line {
+    width: 20px;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#car1 { 
+    top: 0;
+    background-color: #ff0000;
+}
+
+#car2 {
+    top: 40px;
+    background-color: #3a9c8f;
+}
+
+#car3 {
+    top: 80px;
+    background-color: #771b68;
+}
+
+#car4 {
+    top: 120px; 
+    background-color: #d6d43c;
+}
+
+#car5 {
+    top: 160px; 
+    background-color: #ffffff;
+}
+
+#result {
+    font-weight: bold;
+    margin-top: 20px;
+}
